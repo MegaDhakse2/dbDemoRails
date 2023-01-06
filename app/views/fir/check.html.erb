@@ -1,0 +1,34 @@
+<h1>Login Page</h1>
+
+
+<%= form_for :@user, :controller => :users, :action => 'check' do |f| %>
+<%= f.text_field :name, :value =>''%> <br><br>
+<%= f.submit 'Activate' %>
+<% end %>
+
+<br>
+<br>
+Name: <input type="name" class="textBox" id="nme"><br><br>
+ Age: <input type="age" class="textBox" id="age"><br>
+
+<button class="button" onclick="fun()">Login</button>
+<p id="warn"></p>
+<script>
+	function fun()
+	{
+
+      var name = document.getElementById('nme').value;
+      var age = document.getElementById('age').value;
+	  var warn = document.getElementById('warn');
+          if (name == "ster" && age =="24")
+		  {
+			warn.innerHTML = "here you go";
+			// locationl.href="http://127.0.0.1:3000/third"
+		  }else
+		  {
+             warn.innerHTML = "Please enter correct credentials";
+		  }
+	}
+
+</script>
+

@@ -1,0 +1,14 @@
+<h4>This is from db</h4>
+
+
+<% @user.each do |i| %>
+<a href="/sec/<%= i.id%>">
+	<%= i.name%><br>
+</a>
+<% end %>
+<br>
+<br>
+<br>
+<%= link_to 'add data', '/third' %><br>
+<%= link_to 'login', '/login' %>
+

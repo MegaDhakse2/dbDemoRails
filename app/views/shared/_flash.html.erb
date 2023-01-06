@@ -1,0 +1,35 @@
+
+<% if flash[:success] %>
+ <div class="alert alert-info" role="alert" >
+ <%= flash[:success] %>
+</div>
+<% end %>
+
+<% if flash[:name] %>
+	<div class="alert alert-warning" role="alert" >
+    <%= flash[:name] %>
+</div>
+<% end %>
+
+<% if flash[:agenil] %>
+	<div class="alert alert-warning" role="alert" >
+    <%= flash[:agenil] %>
+</div>
+<% end %>
+
+<% if flash[:age] %>
+	<div class="alert alert-warning" role="alert" >
+    <%= flash[:age] %>
+</div>
+<% end %>
+
+
+
+<% if flash[:error] %>
+	<div class="alert alert-warning" role="alert" >
+    <%= flash[:error] %>
+</div>
+<% end %>
+
+
+
